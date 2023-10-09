@@ -48,8 +48,8 @@ h2{
 
 
 
- /* -----banner-----  */
- .section_banner{
+ /* -----banner avec les boutons-----  */
+ /*.section_banner{
     overflow: hidden;
  }
  .banner_img_un{
@@ -138,7 +138,55 @@ h2{
 .section_banner [id="slide03"]:checked ~.slidewrap .slidelist > li{
     transform: translateX(-200%);
 }
+*/
 
+
+/* banner avec scroll */
+.banner_img_un{
+    background-image: url(../img/featured_img_3.jpg);
+    background-size: cover;
+    width: 70%; height: 30rem;
+ }
+ .banner_img_deux{
+    background-image: url(../img/featured_img_1.jpg);
+    background-size: cover;
+    width: 70%; height: 30rem;
+ }
+ .banner_img_trois{
+    background-image: url(../img/featured_img_2.jpg);
+    background-size: cover;
+    width: 70%; height: 30rem;
+ }
+ .slide_img a{
+    display: inline-block;
+    margin-top: 20rem;
+    color: white;
+    background-color:#DF2D2B;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+ }
+.slide_img h2{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.banner{
+    overflow: hidden;
+}
+.slide_img{
+    width: 200%;
+    height: 30rem;
+    display: flex;
+    animation: flowbanner 30s linear infinite;
+    text-align: center;
+}
+@keyframes flowbanner {
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-50%);}
+    100%{transform: translateX(0);}
+    
+}
 
 
  /* -----small pub-----  */
