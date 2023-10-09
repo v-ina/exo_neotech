@@ -145,17 +145,17 @@ h2{
 .banner_img_un{
     background-image: url(../img/featured_img_3.jpg);
     background-size: cover;
-    width: 70%; height: 30rem;
+    width: 1000px; height: 30rem;
  }
  .banner_img_deux{
     background-image: url(../img/featured_img_1.jpg);
     background-size: cover;
-    width: 70%; height: 30rem;
+    width: 1000px; height: 30rem;
  }
  .banner_img_trois{
     background-image: url(../img/featured_img_2.jpg);
     background-size: cover;
-    width: 70%; height: 30rem;
+    width: 1000px; height: 30rem;
  }
  .slide_img a{
     display: inline-block;
@@ -175,15 +175,15 @@ h2{
     overflow: hidden;
 }
 .slide_img{
-    width: 200%;
+    width: 6000px;
     height: 30rem;
     display: flex;
-    animation: flowbanner 30s linear infinite;
+    animation: flowbanner 90s linear infinite;
     text-align: center;
 }
 @keyframes flowbanner {
     0%{transform: translateX(0);}
-    50%{transform: translateX(-50%);}
+    50%{transform: translateX(-75%);}
     100%{transform: translateX(0);}
     
 }
@@ -217,6 +217,44 @@ h2{
     -moz-transition: all 0.2s ease-in-out;
     transition:  all 0.2s ease-in-out;
 } */
+.publicite{
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    width: 50%; height: 100px;
+    min-width: 500px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.5)), url(../img/maxim-ilyahov-0aRycsfH57A-unsplash.jpg);
+    background-size: 100%;
+    background-position: 50%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    transition: background-size 0.7s ease-in-out;
+}
+.publicite a{
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+.publicite h4{
+    font-size: 1.4rem;
+    color: rgb(49, 49, 49);
+}
+.publicite p{
+    color: rgb(80, 80, 80);
+}
+.publicite:hover{
+    background-size: 120%;
+    background-position: 50%;
+
+}
+
+
+
+
+
+
 .pub{
     position: relative;
     margin-top: 8rem;
@@ -230,7 +268,6 @@ h2{
 
 .main_part{
     display: flex;
-    margin-top: 15rem;
     justify-content: center;
     gap: 8rem;
 }
@@ -379,6 +416,8 @@ h2{
 }
 .video_pagination label{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     border: 1px solid grey;
     height: 103.4px;    width: 250px;
@@ -391,11 +430,14 @@ h2{
     }
 
 .video_pagination >label >div{
-    width: 50%; height: 100%;
+    width: 70%; height: 70%;
     overflow: hidden;
+
+
 }
 .video_pagination >label>div>img{
     object-fit: fill;
+    object-position: 50%;
 }
 .video_pagination >label >p{
     width: 80%;
@@ -453,7 +495,7 @@ h2{
  /* -----navigation----- */
  .section_navigation{
     height: 400px;
-    margin-top: 15rem;
+    margin-top: 3rem;
     background-color: #032C4C;
     color: white;
     display: flex;
